@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@500&display=swap');
+
+body{
+    background-color: #d2e0ff; 
+    background-image: linear-gradient(to right, #d2e0ff , #f8bff3); background-size: cover; background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 3.7rem; font-weight: bold; color:  chocolate; letter-spacing: 2px; word-spacing: 8px;
+    margin-top: 50px; margin-bottom: 30px;
+    font-family: 'Acme', sans-serif;
+}
+.container{
+    text-align: center;
+    margin-top: 23px;
+}
+table{
+    margin: auto;
+}
+input{
+    padding: 23px;
+    font-size: 1.3rem;
+    box-shadow: 2px 4px 3px grey;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 20px;  
+    width: 330px;
+    height: 8px;
+    text-align: right;
+}
+button{
+    font-size: 1.5rem;
+    background: rgb(238, 250, 170);
+    box-shadow: 2px 4px 3px grey;
+    border-radius: 20px;
+    width: 85px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+button:hover{
+    background: rgb(248, 255, 207);
+    width: 87px; height: 53px;
+    cursor: pointer;
+}
+.calculator{
+    background-color:  rgb(161, 203, 238);
+    box-shadow: 4px 7px 7px rgb(167, 166, 166); 
+    padding-left: 32px; padding-right: 32px; padding-top: 70px; padding-bottom: 70px; 
+    border-radius: 50px;
+    display: inline-block;
+}
