@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Exo+2:wght@500&family=Fuzzy+Bubbles:wght@400;700&family=Kanit:wght@800&display=swap');
+
+    body {
+        background-color: rgb(6, 179, 135)  ; 
+    background-image: linear-gradient(to right, rgb(6, 179, 135)  , rgb(86, 246, 252) ); background-size: cover; background-position: center;
+    margin-top: 0;
+    }
+
+    h1 {
+        font-family: 'Kanit', sans-serif; word-spacing: 14px; 
+        color: rgb(196, 10, 25); 
+        font-size: 4rem;
+        text-shadow: 5px 5px 5px rgba(190, 189, 189, 0.89);
+    }
+  
+    #b1, #b2, #b3, #b4, #b5, 
+    #b6, #b7, #b8, #b9 {
+        width: 80px;
+        height: 52px;
+        margin: auto;
+        border: 1px solid gray;
+        border-radius: 6px;
+        font-size: 30px;
+        text-align: center;
+    }
+  
+    #but {
+        box-sizing: border-box;
+        width: 95px;
+        height: 40px;
+        border: 1px solid dodgerblue;
+        margin: auto;
+        border-radius: 4px;
+        font-family: 'Exo 2', sans-serif;
+        background-color: rgb(92, 5, 66); box-shadow: 3px 3px 3px rgb(202, 199, 199);
+        color: white;
+        font-size: 1.3rem; padding: 5px;
+        cursor: pointer;
+    }
+      
+    #print {
+        font-family: 'Exo 2', sans-serif;
+        color: rgb(192, 64, 13); margin-top: 0%;
+        font-size: 1.5rem; font-weight: bolder;
+    }
+      
+    #main {
+        text-align: center;
+    }
+      
+    #ins {
+        font-family: 'Exo 2', sans-serif;
+        margin-top: 10px; margin-bottom: 10px; letter-spacing: 1px; word-spacing: 1.5px;
+        color: rgb(107, 4, 155); font-weight: bolder;
+        font-size: 2rem;
+    }
