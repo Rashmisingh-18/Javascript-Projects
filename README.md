@@ -4,3 +4,4 @@
 #### → Simple Piano
 #### → Simple Calculator
 #### → Tic-Tac-Toe
+#### → Random Quote Generator
