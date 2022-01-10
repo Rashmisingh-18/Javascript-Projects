@@ -2,6 +2,7 @@
 
 Here are the some projects made using javascript:
 
+#### → Analog Clock
 #### → Color Guessing Game
 #### → Simple Piano
 #### → Simple Calculator
