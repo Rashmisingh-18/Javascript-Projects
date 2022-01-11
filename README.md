@@ -8,3 +8,5 @@ Here are the some projects made using javascript:
 #### → Simple Calculator
 #### → Tic-Tac-Toe
 #### → Random Quote Generator
+#### → Reversing a String
+
