@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            ;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            max-width: 549px;
+            height: 90vh;
+            background: rgb(239, 225, 241);
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blockquote{
+            color: rgb(253, 21, 5);
+        }
+
+        div {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            background: rgb(248, 234, 215);
+            padding: 20px;
+            border: 5px slategray; border-radius: 10px;
+
+        }
+
+        #user_input {
+            width: 100%;
+            margin-top: 10px; margin-bottom: 10px; padding: 5px;
+        }
+
+        #submit_button {
+            width: 20%;
+            align-self: flex-end;
+            margin-top: 10px;
+            padding: 5px; color: white;
+            background-color: rgb(114, 79, 3);
+            border-radius: 5px;
+        }
+
+        #display {
+            font-size: 1.4rem;
+            height: 50px;
+        }
+        label{
+            color: rgb(141, 59, 5); font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <figure class="text-end">
+        <blockquote class="blockquote">
+            <h1>Write a Script to Reverse a String</h1>
+            <hr>
+        </blockquote>
+    </figure>
+    <div>
+        <form onsubmit="showInput(event);">
+            <label id="label">Enter a String to Reverse:</label>
+            <input type="text" name="message" id="user_input" />
+            <input type="submit" onclick="showInput(event);" id="submit_button" /><br />
+            <label>Your input: </label>
+            <p><span id="display"></span></p>
+        </form>
+    </div>
+
+    <script>
+        function reverseString(str) {
+            let newArr = str.split('');
+            let rev = newArr.map((letter, index, array) => {
+                let newIndex = array.length - index - 1;
+                return array[newIndex];
+            });
+            return rev.join('')
+        }
+        function showInput(e) {
+            e.preventDefault();
+            const inputStr = document.getElementById('user_input').value;
+            if (inputStr.length < 1) {
+                alert("Must enter a string to reverse. Try again.")
+            }
+            let reversed = reverseString(inputStr);
+
+            document.getElementById(
+                'display'
+            ).innerHTML = reversed;
+            document.getElementById('user_input').value = '';
+        }
+    </script>
+</body>
+
+</html>
